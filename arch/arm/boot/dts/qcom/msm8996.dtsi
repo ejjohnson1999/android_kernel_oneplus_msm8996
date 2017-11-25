@@ -2789,11 +2789,11 @@
 
 	qcom,bcl {
 		compatible = "qcom,bcl";
-		qcom,bcl-enable;
+		qcom,bcl-disable;
 		qcom,bcl-framework-interface;
 		qcom,bcl-freq-control-list = <&CPU2 &CPU3>;
-//		qcom,bcl-hotplug-list = <&CPU2 &CPU3>;
-//		qcom,bcl-soc-hotplug-list = <&CPU2 &CPU3>;
+		qcom,bcl-hotplug-list = <&CPU2 &CPU3>;
+		qcom,bcl-soc-hotplug-list = <&CPU2 &CPU3>;
 		qcom,ibat-monitor {
 			qcom,low-threshold-uamp = <3400000>;
 			qcom,high-threshold-uamp = <4200000>;
